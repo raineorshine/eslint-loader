@@ -153,7 +153,7 @@ module.exports = function(input, map) {
   var config = assign(
     // loader defaults
     {
-      formatter: require("eslint/lib/formatters/stylish"),
+      formatter: require("eslint/lib/cli-engine/formatters/stylish"),
       cacheIdentifier: JSON.stringify({
         "eslint-loader": pkg.version,
         eslint: require(userOptions.eslintPath || "eslint").version,
